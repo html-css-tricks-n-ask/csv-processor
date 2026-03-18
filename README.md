@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# 📊 CSV Processor System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based application to **upload, process, sort, and export CSV data** efficiently.
+Built with a clean UI and configurable processing options.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* 📂 Upload CSV files
+* 📋 Parse and display data in table format
+* 🔄 Sorting functionality (ascending/descending)
+* ⚙️ Configurable processing options
+* 📥 Export processed data as CSV
+* ❌ Error handling for invalid files
+* 📊 Dynamic data rendering
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+* React.js
+* JavaScript (ES6+)
+* HTML5 File API
+* CSS (Custom UI)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```id="f8z0sy"
+src/
+│
+├── components/
+│   ├── FileUpload.js
+│   ├── DataTable.js
+│   ├── ConfigPanel.js
+│   ├── ExportButton.js
+│
+├── utils/
+│   ├── csvParser.js
+│   ├── sortUtils.js
+│
+├── App.js
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Setup Instructions
 
-### `npm run eject`
+```bash id="q3p6g1"
+git clone https://github.com/your-username/csv-processor.git
+cd csv-processor
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📊 How It Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Upload a `.csv` file
+2. Data is parsed into JSON format
+3. Displayed in a dynamic table
+4. Apply sorting / configuration
+5. Export updated data as CSV
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📄 Sample CSV Format
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```csv id="c3tkv9"
+Name,Age,City
+John,28,Delhi
+Rahul,32,Mumbai
+Anita,25,Bangalore
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ⚙️ Key Functionalities
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🔹 CSV Parsing
 
-### Analyzing the Bundle Size
+* Converts CSV → JSON
+* Handles headers dynamically
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🔹 Sorting
 
-### Making a Progressive Web App
+* Sort by any column
+* Ascending / Descending toggle
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 🔹 Export
 
-### Advanced Configuration
+* Converts processed data → CSV
+* One-click download
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## ⚠️ Error Handling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* Invalid file format detection
+* Empty file validation
+* Missing headers handling
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔮 Future Improvements
+
+* Large file support (pagination)
+* Column filtering
+* Search functionality
+* Drag & drop upload
+* Backend integration
+
+---
+
+## 👨‍💻 Author
+
+Bharat Solanki
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
